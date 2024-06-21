@@ -1,0 +1,128 @@
+html.body{
+    min-width: 1200px;
+    width: 100%;
+    height: 100%;
+}
+/* #region页面头部 start*/
+.header{
+    height: 498px;
+}
+.top .container{
+    width: 1200px;
+    height: 498px;
+    margin:0 auto;
+    background: url("./images/topBg.png") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.top .logo{
+    width: 72px;
+    height: 75px;
+    background: url("./images/logo.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 22px;
+    left: 52px;
+}
+.top .title{
+    width: 659px;
+    height: 96px;
+    position: absolute;
+    top: 180px;
+    left: 51px;
+    background: url("./images/title.png") no-repeat;
+    background-size: cover;
+}
+.top .button{
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    top: 340px;
+    left: 51px;
+    background: url("./images/buttonBg.png") no-repeat;
+    background-size: cover;
+}
+.top .buttonText img{
+    width: 87px;
+    height: 19px;
+    margin:10px 27px 11px 26px;
+}
+.top .navigation{
+    width: 1100px;
+    height: 117px;
+    position: absolute;
+    top: 448px;
+    left: 50px;
+    background: url("./images/nav.png") no-repeat;
+    background-size: cover;
+}
+.top .navigation .list{
+    display: flex;
+    justify-content : space-between;
+    padding:38px 51px 42px 37px;
+    font-size:24px;
+    color:#666666;
+    font-family: Inter-Medium;
+    font-weight: Medium;
+}
+.top .navigation .list li:hover{
+    color:#009896;
+    cursor: pointer;
+}
+/* #endregion页面头部 end*/
+
+/* #region页面中部 start */
+
+.main-content .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 90px;
+    padding-right: 101px;
+}
+.main-content .container .title{
+    margin-top: 149px;
+    text-align: center;
+    font-size: 36px;
+    font-family: Inter-Medium;
+    font-weight: Medium;
+}
+.main-content .container .contentText{
+    margin-top: 52px;
+    font-size: 16px;
+    color:#666666;
+}
+.main-content .container .house{
+    margin-top: 96px;
+    margin-right: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-content .container .housePic{
+    width: 294px;
+    height:300px;
+}
+.main-content .container .houseText{
+    padding: 12px 7px;
+}
+.main-content .container .houseText .center{
+    margin-top: 21px;
+    margin-bottom: 24px;
+}
+/* #endregion页面中部 end */
+
+/* #region页面底部 start */
+.footer{
+    width: 1200px;
+    height: 494px;
+    margin:0 auto;
+    background: url("./images/footer.png") no-repeat;
+    background-size: cover;
+}
+.footer .icon{
+    width:86px;
+    height:90px;
+    background: url("./images/logo.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+/* #endregion页面底部 end */

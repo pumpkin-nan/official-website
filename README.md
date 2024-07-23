@@ -1,7 +1,36 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+{
+                "pitchDegrees": 0.106229156,
+                "azimuthDegrees": 0,
+                "stats": {
+                    "areaMeters2": 2208.0938,
+                    "sunshineQuantiles": [
+                        373.5075,
+                        1020.6201,
+                        1159.5032,
+                        1240.9362,
+                        1294.3737,
+                        1337.9791,
+                        1368.4736,
+                        1382.2709,
+                        1394.1956,
+                        1402.1915,
+                        1551.8937
+                    ],
+                    "groundAreaMeters2": 2208.09
+                },
+                "center": {
+                    "latitude": 40.6891646,
+                    "longitude": -74.04459659999999
+                },
+                "boundingBox": {
+                    "sw": {
+                        "latitude": 40.6888432,
+                        "longitude": -74.0450656
+                    },
+                    "ne": {
+                        "latitude": 40.689581499999996,
+                        "longitude": -74.0440138
+                    }
+                },
+                "planeHeightAtCenterMeters": 11.451296
+            },

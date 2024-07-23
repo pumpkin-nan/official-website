@@ -1,45 +1,62 @@
 <template>
-  <div class="main-content">
-    <div class="container">
-      <div class="title">Erkunde Photovoltaik-Nachrichten</div>
-      <div class="contentText">
-        Im Juni 2024 führten Überkapazitäten in Chinas Photovoltaiksektor zu einem anhaltenden Preisverfall, der entlang der gesamten Wertschöpfungskette von Polysilizium, Wafern, Solarzellen und Modulen Verluste verursachte. Derzeit sind die Lagerbestände an Solarmodulen hoch und die Nachfrage schwach, was zu einem fortgesetzten Preisverfall führt. In der zweiten Jahreshälfte wird eine intensive Konsolidierung und eine Welle von Insolvenzen erwartet. Trotz der vielen negativen Faktoren wird die Photovoltaiktechnologie weiterhin Fortschritte machen. Durchbrüche bei hocheffizienten Zelltechnologien werden die Kosten senken und die Effizienz steigern. Dank der Entwicklung von Preisen und Technologie bleibt der Ausblick optimistisch. Indem Sie die Updates von Maysun Solar verfolgen, können Sie sich über Branchennews, Trends und Preisänderungen informieren und so Ihre Wettbewerbsfähigkeit steigern.
-      </div>
-      <div class="house">
-        <div class="housePic">
-          <img src="../../assets/images/house.png" />
-        </div>
-        <div class="houseText">
-          <div class="top">
-            <img src="../../assets/images/houseTop.png" />
+  <div style="width: 800px; height: 800px">
+    <div id="app">
+      <el-tabs v-model="activeName">
+        <el-tab-pane
+          v-for="item in tabs"
+          :key="item.key"
+          :label="item.label"
+          :name="item.name"
+        >
+          <div class="mainContent">
+            <component
+              :is="item.tab"
+              v-if="item.name === activeName"
+              :name="item.key"
+            />
           </div>
-          <div class="center">
-            <img src="../../assets/images/houseCenter.png" />
-          </div>
-          <div class="end"> <img src="../../assets/images/houseEnd.png" /></div>
-        </div>
-      </div>
-      <div class="house">
-        <div class="housePic">
-          <img src="../../assets/images/house.png" />
-        </div>
-        <div class="houseText">
-          <div class="top">
-            <img src="../../assets/images/houseTop.png" />
-          </div>
-          <div class="center">
-            <img src="../../assets/images/houseCenter.png" />
-          </div>
-          <div class="end"> <img src="../../assets/images/houseEnd.png" /></div>
-        </div>
-      </div>
+        </el-tab-pane>
+      </el-tabs>
     </div>
   </div>
 </template>
 
-<script setup>
+<script>
+import Map from "./map.vue";
+import Map2 from "./map2.vue";
+import tailwind from "./styleTest.vue";
+export default {
+  components: { Map, Map2, tailwind },
+  data() {
+    return {
+      tabs: [
+        {
+          label: "地图1",
+          name: "first",
+          tab: "Map",
+        },
+        {
+          label: "地图2",
+          name: "second",
+          tab: "Map2",
+        },
+        {
+          label: "tailwind",
+          name: "three",
+          tab: "tailwind",
+        },
+      ],
+      activeName: "first",
+    };
+  },
+};
 </script>
-
 <style scoped>
-  
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 </style>

@@ -10,7 +10,8 @@ import postcsspxtorem from 'postcss-pxtorem'
 export default defineConfig({
   server:{
     open:true, //自动浏览
-    port:8088
+    port:8088,
+    host: true,
   },
   // css:{
   //   postcss:{
